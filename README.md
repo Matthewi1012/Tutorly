@@ -1,1 +1,3 @@
-# Tutorly
+# Tutorly: Peer-to-Peer Tutoring for Connected Learning
+
+Tutorly is a peer-to-peer tutoring application designed to enhance academic support and foster stronger social connections among university students. Developed in response to the growing challenges of academic disengagement and social isolation during the COVID-19 pandemic, Tutorly offers a platform where students can easily find and connect with peer tutors across a variety subjects. Supported by research highlighting the benefits of peer tutoring for both academic performance and personal development, Tutorly aims to build a supportive, engaging, and collaborative learning environment that helps students thrive within the university community.
