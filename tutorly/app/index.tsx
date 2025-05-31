@@ -1,25 +1,29 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native'
 import React from 'react'
+import { useRouter } from 'expo-router';
 
-const start = () => {
+const App = () => {
+  const router = useRouter();
+
   return (
+    
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Image source={require('../../assets/images/tutorlyLogo.png')} style={styles.logo}></Image>
+        <Image source={require('../assets/images/tutorlyLogo.png')} style={styles.logo}></Image>
         <Text style={styles.title}>Tutorly</Text>
       </View>
       <Text style={styles.subParagraph}>Find study partners and peer tutors to excel with on Tutorly.</Text>
-      <TouchableOpacity style={styles.createAccount}>
+      <TouchableOpacity onPress={() => router.push('/register')} style={styles.createAccount}>
         <Text style={styles.createAccountText}>Create an Account</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.login}>
+      <TouchableOpacity onPress={() => router.push('/login')} style={styles.login}>
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
     </View>
   )
 }
 
-export default start
+export default App
 
 const styles = StyleSheet.create({ 
   container: {
